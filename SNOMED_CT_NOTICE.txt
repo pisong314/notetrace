@@ -1,0 +1,67 @@
+SNOMED CT-AU Content Notice
+===========================
+
+This product (NoteTrace) includes content derived from SNOMED CT-AU
+with Australian Medicines Terminology (AMT), August 2025 release,
+published by the Australian Digital Health Agency via the National
+Clinical Terminology Service (NCTS).
+
+
+Attribution (SNOMED CT)
+-----------------------
+This material includes SNOMED Clinical Terms™ (SNOMED CT®) which is used
+by permission of the International Health Terminology Standards Development
+Organisation (IHTSDO, now known as SNOMED International). All rights
+reserved. SNOMED CT® was originally created by The College of American
+Pathologists. "SNOMED" and "SNOMED CT" are registered trademarks of the
+IHTSDO.
+
+SNOMED CT-AU is the Australian edition of SNOMED CT. It is distributed
+by the Australian Digital Health Agency on behalf of the Commonwealth
+of Australia via the National Clinical Terminology Service (NCTS).
+
+
+Attribution (Australian Medicines Terminology)
+----------------------------------------------
+This material includes content from the Australian Medicines Terminology
+(AMT), which is distributed as part of SNOMED CT-AU. AMT is owned and
+maintained by the Australian Digital Health Agency and incorporates data
+sourced from the Pharmaceutical Benefits Scheme (PBS) and the Therapeutic
+Goods Administration (TGA).
+
+
+Source Release
+--------------
+SNOMED CT-AU with AMT — August 2025 release.
+
+The terminology data shipped in the data/ directory of this distribution
+was derived from that single point-in-time release. It is not kept current
+with subsequent monthly NCTS releases unless this product is updated.
+
+
+End-User Obligations
+--------------------
+Use of SNOMED CT-AU content (including derivative content embedded in this
+product) requires the end user, or the end user's organisation, to hold a
+valid SNOMED CT Affiliate Licence and Australian National Terminology
+Licence Agreement. These licences are available free of charge to
+Australian users by registering with the NCTS at:
+
+    https://www.healthterminologies.gov.au/
+
+By installing or using this product, you confirm that you (or your
+organisation) hold the required licences for SNOMED CT-AU in your
+jurisdiction, and that you will use the embedded terminology content only
+in accordance with the terms of those licences.
+
+
+Disclaimer
+----------
+This product is not endorsed by, affiliated with, sponsored by, or
+supported by SNOMED International, the Australian Digital Health Agency,
+the Commonwealth of Australia, or any State or Territory government.
+
+The embedded terminology content is a derivative of a single point-in-time
+SNOMED CT-AU release. It is the end user's responsibility to determine the
+suitability of this content for their intended purpose and to update it
+as required by their clinical, regulatory, or operational obligations.

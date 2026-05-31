@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 480" width="1100" height="480" role="img" aria-label="The note says Haematuria, which the consultation never states, so it is needs_review — but NoteTrace points to the closest related line: the patient mentioning dark-coloured urine.">
+  <style>
+    text { font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .mono { font-family: "DejaVu Sans Mono", Menlo, Consolas, monospace; font-size: 20px; fill: #0f172a; }
+    .lbl  { font-size: 13px; font-weight: 700; fill: #94a3b8; letter-spacing: 1.5px; }
+    .pill { font-size: 12.5px; font-weight: 700; fill: #ffffff; letter-spacing: 0.4px; }
+    .spk  { font-size: 16px; font-weight: 600; fill: #94a3b8; }
+    .say  { font-size: 16px; fill: #334155; }
+    .note { font-size: 16px; fill: #64748b; }
+  </style>
+
+  <rect x="0" y="0" width="1100" height="480" fill="#f8fafc"/>
+
+  <!-- ===== AI note + verdict ===== -->
+  <text x="40" y="44" class="lbl">AI SCRIBE NOTE</text>
+  <rect x="36" y="62" width="140" height="28" rx="5" fill="#fecaca"/>
+  <text x="44" y="84" class="mono">Haematuria</text>
+  <rect x="180" y="63" width="128" height="27" rx="13" fill="#dc2626"/>
+  <text x="244" y="81" class="pill" text-anchor="middle">needs review</text>
+  <text x="324" y="82" class="say">— never stated in the consultation</text>
+
+  <text x="40" y="122" class="note">NoteTrace can't confirm it — but instead of going silent, it points to the closest related line: ↓</text>
+
+  <!-- ===== consultation ===== -->
+  <rect x="40" y="150" width="1020" height="306" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="64" y="186" class="lbl">CONSULTATION (SOURCE)</text>
+
+  <text x="64" y="222" class="say"><tspan class="spk">Dr:&#160;&#160;</tspan>What brings you in today?</text>
+  <text x="64" y="250" class="say"><tspan class="spk">Pt:&#160;&#160;</tspan>A cough and sore throat for a week.</text>
+  <text x="64" y="278" class="say"><tspan class="spk">Dr:&#160;&#160;</tspan>Any fevers?</text>
+  <text x="64" y="306" class="say"><tspan class="spk">Pt:&#160;&#160;</tspan>On and off, and I've felt really tired.</text>
+  <text x="64" y="334" class="say"><tspan class="spk">Dr:&#160;&#160;</tspan>How's your appetite?</text>
+  <text x="64" y="362" class="say"><tspan class="spk">Pt:&#160;&#160;</tspan>Not great, eating less than usual.</text>
+
+  <!-- highlighted closest-match line -->
+  <rect x="56" y="377" width="988" height="30" rx="7" fill="#eff6ff" stroke="#bfdbfe"/>
+  <text x="64" y="398" class="say"><tspan class="spk">Pt:&#160;&#160;</tspan>Oh — and my <tspan fill="#1d4ed8" font-weight="700">urine</tspan> has looked a strange <tspan fill="#1d4ed8" font-weight="700">dark colour</tspan> lately.</text>
+  <rect x="812" y="379" width="224" height="26" rx="13" fill="#2563eb"/>
+  <text x="924" y="396" class="pill" text-anchor="middle">closest match · ~59%</text>
+
+  <text x="64" y="435" class="say"><tspan class="spk">Dr:&#160;&#160;</tspan>Any pain passing urine?</text>
+</svg>

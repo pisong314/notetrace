@@ -1,0 +1,13 @@
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor caches
+.vscode/
+.idea/
+*.swp
+*~
+
+# Local notes / drafts
+*.local.md
+NOTES.md
