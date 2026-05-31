@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security disclosure
+    url: mailto:piyawoot.song@gmail.com
+    about: Please email security issues directly rather than opening a public issue.
+  - name: Commercial licensing / extended evaluation
+    url: mailto:piyawoot.song@gmail.com
+    about: For production licensing or to extend the 90-day eval period, email the vendor.
