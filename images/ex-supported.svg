@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" width="1000" height="300" role="img" aria-label="MI matches heart attack and hypertension is stated, so both are verified; hypercholesterolemia appears nowhere in the consultation, so it needs review.">
+  <style>
+    text { font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .mono { font-family: "DejaVu Sans Mono", Menlo, Consolas, monospace; font-size: 18px; fill: #0f172a; }
+    .lbl  { font-size: 13px; font-weight: 700; fill: #94a3b8; letter-spacing: 1.5px; }
+    .say  { font-size: 18px; fill: #334155; }
+    .pill { font-size: 12.5px; font-weight: 700; fill: #ffffff; letter-spacing: 0.6px; }
+    .ent  { font-size: 17px; font-weight: 700; fill: #0f172a; }
+    .why  { font-size: 16px; fill: #64748b; }
+  </style>
+
+  <rect x="0" y="0" width="1000" height="300" fill="#f8fafc"/>
+
+  <!-- SOURCE -->
+  <rect x="40" y="22" width="430" height="104" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="64" y="48" class="lbl">CONSULTATION (SOURCE)</text>
+  <rect x="121" y="66" width="108" height="23" rx="4" fill="#bbf7d0"/>
+  <rect x="158" y="94" width="118" height="23" rx="4" fill="#bbf7d0"/>
+  <text x="64" y="82" class="say">I had a <tspan font-weight="600">heart attack</tspan> last year,</text>
+  <text x="64" y="110" class="say">and I've got <tspan font-weight="600">hypertension</tspan>.</text>
+
+  <!-- NOTE -->
+  <rect x="530" y="22" width="430" height="104" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="554" y="48" class="lbl">AI SCRIBE NOTE</text>
+  <rect x="616" y="66" width="27" height="23" rx="4" fill="#bbf7d0"/>
+  <rect x="660" y="66" width="135" height="23" rx="4" fill="#bbf7d0"/>
+  <rect x="552" y="94" width="221" height="23" rx="4" fill="#fecaca"/>
+  <text x="554" y="82" class="mono">PMHx: <tspan>MI</tspan>, <tspan>hypertension</tspan>,</text>
+  <text x="554" y="110" class="mono"><tspan>hypercholesterolemia</tspan>.</text>
+
+  <!-- FINDINGS -->
+  <rect x="40" y="140" width="920" height="148" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+
+  <rect x="64" y="160" width="150" height="30" rx="15" fill="#16a34a"/>
+  <text x="139" y="180" class="pill" text-anchor="middle">VERIFIED</text>
+  <text x="240" y="180" class="ent">MI</text>
+  <text x="360" y="180" class="why">matches "heart attack" in the consultation</text>
+
+  <rect x="64" y="206" width="150" height="30" rx="15" fill="#16a34a"/>
+  <text x="139" y="226" class="pill" text-anchor="middle">VERIFIED</text>
+  <text x="240" y="226" class="ent">hypertension</text>
+  <text x="360" y="226" class="why">stated directly in the consultation</text>
+
+  <rect x="64" y="252" width="150" height="30" rx="15" fill="#dc2626"/>
+  <text x="139" y="272" class="pill" text-anchor="middle">NEEDS REVIEW</text>
+  <text x="240" y="272" class="ent">hypercholesterolemia</text>
+  <text x="470" y="272" class="why">nothing in the consultation supports it</text>
+</svg>

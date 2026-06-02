@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 212" width="1000" height="212" role="img" aria-label="The consultation says left knee replacement; the note says R TKR. The procedure matches but the side is flipped.">
+  <style>
+    text { font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .mono { font-family: "DejaVu Sans Mono", Menlo, Consolas, monospace; font-size: 18px; fill: #0f172a; }
+    .lbl  { font-size: 13px; font-weight: 700; fill: #94a3b8; letter-spacing: 1.5px; }
+    .say  { font-size: 18px; fill: #334155; }
+    .pill { font-size: 12.5px; font-weight: 700; fill: #ffffff; letter-spacing: 0.6px; }
+    .ent  { font-size: 17px; font-weight: 700; fill: #0f172a; }
+    .why  { font-size: 16px; fill: #64748b; }
+  </style>
+
+  <rect x="0" y="0" width="1000" height="212" fill="#f8fafc"/>
+
+  <!-- SOURCE -->
+  <rect x="40" y="22" width="430" height="80" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="64" y="50" class="lbl">CONSULTATION (SOURCE)</text>
+  <rect x="134" y="73" width="31" height="24" rx="4" fill="#fecaca"/>
+  <rect x="167" y="73" width="159" height="24" rx="4" fill="#bbf7d0"/>
+  <text x="64" y="90" class="say">having a <tspan font-weight="600">left</tspan>&#160;<tspan font-weight="600">knee replacement</tspan></text>
+
+  <!-- NOTE -->
+  <rect x="530" y="22" width="430" height="80" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="554" y="50" class="lbl">AI SCRIBE NOTE</text>
+  <rect x="702" y="73" width="16" height="24" rx="4" fill="#fecaca"/>
+  <rect x="723" y="73" width="40" height="24" rx="4" fill="#bbf7d0"/>
+  <text x="554" y="90" class="mono">Pt booked for <tspan>R</tspan>&#160;<tspan>TKR</tspan>.</text>
+
+  <!-- VERDICT -->
+  <rect x="40" y="116" width="920" height="74" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="64" y="138" width="150" height="30" rx="15" fill="#dc2626"/>
+  <text x="139" y="158" class="pill" text-anchor="middle">CONFLICTING</text>
+  <text x="240" y="158" class="ent">TKR</text>
+  <text x="320" y="158" class="why">right procedure (TKR = knee replacement) — but wrong side: right ≠ left</text>
+</svg>

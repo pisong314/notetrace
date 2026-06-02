@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 212" width="1000" height="212" role="img" aria-label="The consultation says T2DM; the note says diabetes. The note generalised, nothing invented, so it is verified.">
+  <style>
+    text { font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .mono { font-family: "DejaVu Sans Mono", Menlo, Consolas, monospace; font-size: 18px; fill: #0f172a; }
+    .lbl  { font-size: 13px; font-weight: 700; fill: #94a3b8; letter-spacing: 1.5px; }
+    .say  { font-size: 18px; fill: #334155; }
+    .pill { font-size: 12.5px; font-weight: 700; fill: #ffffff; letter-spacing: 0.6px; }
+    .ent  { font-size: 17px; font-weight: 700; fill: #0f172a; }
+    .why  { font-size: 16px; fill: #64748b; }
+  </style>
+
+  <rect x="0" y="0" width="1000" height="212" fill="#f8fafc"/>
+
+  <!-- SOURCE -->
+  <rect x="40" y="22" width="430" height="80" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="64" y="50" class="lbl">CONSULTATION (SOURCE)</text>
+  <rect x="185" y="73" width="56" height="24" rx="4" fill="#bbf7d0"/>
+  <text x="64" y="90" class="say">diagnosed with <tspan id="s_dx" font-weight="600">T2DM</tspan>, on metformin</text>
+
+  <!-- NOTE -->
+  <rect x="530" y="22" width="430" height="80" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="554" y="50" class="lbl">AI SCRIBE NOTE</text>
+  <rect x="649" y="73" width="92" height="24" rx="4" fill="#bbf7d0"/>
+  <text x="554" y="90" class="mono">Past hx: <tspan id="n_dx">diabetes</tspan>.</text>
+
+  <!-- VERDICT -->
+  <rect x="40" y="116" width="920" height="74" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="64" y="138" width="150" height="30" rx="15" fill="#16a34a"/>
+  <text x="139" y="158" class="pill" text-anchor="middle">VERIFIED</text>
+  <text x="240" y="158" class="ent">diabetes</text>
+  <text x="350" y="158" class="why">note generalised T2DM → diabetes — still true, nothing invented</text>
+</svg>

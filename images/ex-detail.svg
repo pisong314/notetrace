@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 212" width="1000" height="212" role="img" aria-label="The consultation says diabetes; the note says Type 2 Diabetes Mellitus. The note added detail the source did not give.">
+  <style>
+    text { font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .mono { font-family: "DejaVu Sans Mono", Menlo, Consolas, monospace; font-size: 18px; fill: #0f172a; }
+    .lbl  { font-size: 13px; font-weight: 700; fill: #94a3b8; letter-spacing: 1.5px; }
+    .say  { font-size: 18px; fill: #334155; }
+    .pill { font-size: 12.5px; font-weight: 700; fill: #ffffff; letter-spacing: 0.6px; }
+    .ent  { font-size: 17px; font-weight: 700; fill: #0f172a; }
+    .why  { font-size: 16px; fill: #64748b; }
+  </style>
+
+  <rect x="0" y="0" width="1000" height="212" fill="#f8fafc"/>
+
+  <!-- SOURCE -->
+  <rect x="40" y="22" width="430" height="80" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="64" y="50" class="lbl">CONSULTATION (SOURCE)</text>
+  <rect x="114" y="73" width="80" height="24" rx="4" fill="#bbf7d0"/>
+  <text x="64" y="90" class="say">I have <tspan font-weight="600">diabetes</tspan>.</text>
+
+  <!-- NOTE -->
+  <rect x="530" y="22" width="430" height="80" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="554" y="50" class="lbl">AI SCRIBE NOTE</text>
+  <rect x="615" y="73" width="72" height="24" rx="4" fill="#fde68a"/>
+  <text x="554" y="90" class="mono">PMHx: <tspan>Type 2</tspan> Diabetes Mellitus.</text>
+
+  <!-- VERDICT -->
+  <rect x="40" y="116" width="920" height="74" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="64" y="138" width="150" height="30" rx="15" fill="#d97706"/>
+  <text x="139" y="158" class="pill" text-anchor="middle">PLAUSIBLE</text>
+  <text x="240" y="158" class="ent">Type 2 Diabetes</text>
+  <text x="410" y="158" class="why">source only says "diabetes" — the note added "Type 2" (could be Type 1)</text>
+</svg>

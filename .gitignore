@@ -11,3 +11,6 @@ Thumbs.db
 # Local notes / drafts
 *.local.md
 NOTES.md
+
+# Generated PDFs
+*.pdf

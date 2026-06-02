@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" width="1200" height="440" role="img" aria-label="The note mentions perindopril twice; NoteTrace links the 'started 10 mg' mention to the line where it was started and the 'ceased' mention to the line where it was stopped for a cough.">
+  <style>
+    text { font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    .mono { font-family: "DejaVu Sans Mono", Menlo, Consolas, monospace; font-size: 17px; fill: #0f172a; }
+    .lbl  { font-size: 13px; font-weight: 700; fill: #94a3b8; letter-spacing: 1.5px; }
+    .spk  { font-size: 16px; font-weight: 600; fill: #94a3b8; }
+    .say  { font-size: 16px; fill: #334155; }
+    .tag  { font-size: 12.5px; font-weight: 700; fill: #ffffff; letter-spacing: 0.5px; }
+    .cap  { font-size: 15px; fill: #64748b; }
+  </style>
+
+  <rect x="0" y="0" width="1200" height="440" fill="#f8fafc"/>
+
+  <!-- ================= SOURCE (left) ================= -->
+  <rect x="40" y="70" width="430" height="300" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="64" y="104" class="lbl">CONSULTATION (SOURCE)</text>
+
+  <!-- source line 1 (started) -->
+  <rect x="166" y="134" width="91" height="22" rx="4" fill="#dbeafe"/>
+  <text x="64" y="150" class="say"><tspan class="spk">Pt:&#160;&#160;</tspan>started on <tspan id="src1" font-weight="600" fill="#1d4ed8">perindopril</tspan>&#160;<tspan fill="#16a34a" font-weight="700">10 mg</tspan>,</text>
+  <text x="100" y="176" class="say">it controlled my BP nicely.</text>
+
+  <!-- source line 2 -->
+  <text x="64" y="226" class="say"><tspan class="spk">Dr:&#160;&#160;</tspan>any problems with it?</text>
+
+  <!-- source line 3 (ceased) -->
+  <rect x="187" y="260" width="91" height="22" rx="4" fill="#ede9fe"/>
+  <text x="64" y="276" class="say"><tspan class="spk">Pt:&#160;&#160;</tspan>I stopped the <tspan id="src3" font-weight="600" fill="#6d28d9">perindopril</tspan></text>
+  <text x="100" y="302" class="say">a month ago — it gave me a</text>
+  <text x="100" y="328" class="say">dry cough that wouldn't settle.</text>
+
+  <!-- ================= NOTE (right) ================= -->
+  <rect x="730" y="70" width="430" height="300" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="754" y="104" class="lbl">AI SCRIBE NOTE</text>
+
+  <!-- note line A -->
+  <rect x="751" y="160" width="118" height="24" rx="4" fill="#dbeafe"/>
+  <text x="754" y="178" class="mono">perindopril <tspan fill="#16a34a" font-weight="700">10 mg</tspan>, started for BP.</text>
+  <text x="754" y="200" class="cap" fill="#16a34a">&#10003; dose confirmed against this line</text>
+
+  <!-- note line B -->
+  <rect x="751" y="236" width="118" height="24" rx="4" fill="#ede9fe"/>
+  <text x="754" y="254" class="mono">Perindopril ceased — dry cough.</text>
+
+  <!-- ================= connectors ================= -->
+  <defs>
+    <marker id="arrowBlue" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrowViolet" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#7c3aed"/>
+    </marker>
+  </defs>
+
+  <!-- A: note "started" -> source line 1 -->
+  <path d="M730,172 C640,172 560,144 470,144" fill="none" stroke="#2563eb" stroke-width="2.5" marker-end="url(#arrowBlue)"/>
+  <rect x="556" y="146" width="88" height="24" rx="12" fill="#2563eb"/>
+  <text x="600" y="163" class="tag" text-anchor="middle">started</text>
+
+  <!-- B: note "ceased" -> source line 3 -->
+  <path d="M730,248 C640,248 560,270 470,270" fill="none" stroke="#7c3aed" stroke-width="2.5" marker-end="url(#arrowViolet)"/>
+  <rect x="558" y="250" width="84" height="24" rx="12" fill="#7c3aed"/>
+  <text x="600" y="267" class="tag" text-anchor="middle">ceased</text>
+
+  <!-- caption -->
+  <text x="600" y="408" class="cap" text-anchor="middle">Same drug, named twice — each mention is matched to the line it actually belongs to.</text>
+</svg>

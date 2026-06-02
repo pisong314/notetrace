@@ -2,17 +2,25 @@
 
 A safety net for AI scribe notes — it flags hallucinations and errors before they reach the patient record.
 
-AI scribes helps save lots of time but it can invent a diagnosis, miswrite a dose, or flip left and right. NoteTrace checks the note against the actual consultation — or any source you trust — and grades every finding:
+AI scribes save a lot of time, but they can invent a diagnosis, miswrite a dose, or flip left and right. NoteTrace checks the note against the actual consultation and grades every finding:
 
 🟢 **verified** · 🟡 **plausible** · 🔴 **conflicting** · 🔴 **needs review**
 
-It matches on clinical *meaning*, not words — "panadol" is paracetamol, "MI" a heart attack — and checks medication doses and procedure left/right. When it can't confirm something, it points to the closest line in the source, not just "not found." See **[worked examples](docs/examples.md)**.
+It matches on clinical *meaning*, not just words — "panadol" is paracetamol, "MI" a heart attack — and checks medication doses and procedure left/right. Every finding shows its working: the exact source line it matched and why it was flagged. When something cannot be confirmed, it points to the closest line so the clinician knows where to look.
+
+Not an LLM — NoteTrace doesn't *write* text, it *checks* it, the same way every time (deterministic). See the **[worked examples](docs/examples.md)**.
+
+Built by a practising clinician.
+
+**▶ [Try Online Demo](https://provenance-detect-1035234570973.australia-southeast1.run.app/)** — no install needed.
 
 <p align="center"><img src="images/hero.svg" alt="NoteTrace grades each line of an AI scribe note against the consultation — MI verified, Type 2 diabetes plausible, asthma needs review, paracetamol dose conflicting." width="900"></p>
 
-**And when a finding isn't supported, it points to the closest related line — not a silent miss:**
+<p align="center"><em><strong>Fig 1.</strong> Each finding graded against the consultation: verified, plausible, needs review, or conflicting.</em></p>
 
 <p align="center"><img src="images/hint.svg" alt="Haematuria is needs_review because the consultation never states it, but NoteTrace points to the closest related line — the patient mentioning dark-coloured urine." width="900"></p>
+
+<p align="center"><em><strong>Fig 2.</strong> Unsupported claims point to the closest related line — so the clinician knows where to look.</em></p>
 
 ## Beyond AI scribes
 
@@ -25,7 +33,7 @@ NoteTrace checks any LLM-generated clinical text against its source:
 
 ## Download
 
-Latest builds for Linux and Windows (x86_64):
+Preview builds for Linux and Windows (x86_64):
 
 **[github.com/pisong314/notetrace/releases/latest](https://github.com/pisong314/notetrace/releases/latest)**
 
@@ -36,13 +44,19 @@ Latest builds for Linux and Windows (x86_64):
 
 ## Runs locally
 
+**Requirements:** x86_64 CPU (no GPU), 256 MB RAM, 350 MB disk. Runs fully offline.
+
 **Standalone** — runs entirely on your own computer. Nothing is sent to the cloud; patient data never leaves your practice.
 
-**Requirements:** x86_64 CPU (no GPU), 256 MB RAM, 350 MB disk. Runs fully offline.
+Need it centrally? The same binary runs as a server (`notetrace-server`) on your own infrastructure or private cloud — the data still never leaves your control.
+
+
+
+*NoteTrace uses SNOMED CT-AU internally, so running it locally requires a valid SNOMED CT licence for your country — in Australia this is available at no cost via the [NCTS](https://www.healthterminologies.gov.au/). See [SNOMED_CT_NOTICE.txt](SNOMED_CT_NOTICE.txt).*
 
 ## Quickstart
 
-Unzip what you downloaded, then send a `{summary, source}` pair on stdin:
+Unzip what you [downloaded](https://github.com/pisong314/notetrace/releases/latest), then send a `{summary, source}` pair on stdin:
 
 ```bash
 echo '{"summary":"pt takes paracetamol 1g QID",
@@ -78,7 +92,6 @@ For a long-running server, use `notetrace-server` — see [docs/rest.md](docs/re
 
 ## Known Limitations
 
-- **Base vs salt drug names.** "Metformin" and "metformin hydrochloride" are separate concepts, so one may not match the other across note and source. WIP to resolve this.
 - **No negation or family-history detection yet.** "No chest pain" or "family history of diabetes" are treated as if the condition is present. Reliable handling needs more compute (GPU); this build is CPU-only.
 
 ## Reporting issues or coverage gaps
@@ -93,4 +106,4 @@ Please include the dist version, your OS, and a minimal repro (de-identified). T
 
 NoteTrace is a **review aid, not a medical device**. It flags content for a clinician to check; it does not approve, reject, or correct notes, and it is not a substitute for clinical judgement. A `verified` result means the source supports the statement — not that the statement is clinically correct. Always review the note against the full record before relying on it.
 
-Maintained by [piyawoot.song@gmail.com](mailto:piyawoot.song@gmail.com). Questions and feedback welcome.
+Built and maintained by Dr Pi Songsiritat, MBBS, FRACGP — [piyawoot.song@gmail.com](mailto:piyawoot.song@gmail.com). Questions and feedback welcome.
