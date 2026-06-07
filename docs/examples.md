@@ -1,5 +1,7 @@
 # Examples — what NoteTrace catches
 
+*Examples are simplified for clarity — real consultations are longer, but the checks work the same way.*
+
 Every entity gets a traffic-light **`level`**:
 
 - 🟢 **`verified`** — the source supports the claim.

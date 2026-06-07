@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="1200" height="560" role="img" aria-label="An AI scribe note with matches highlighted against the consultation, and a findings list grading each: MI verified, Type 2 diabetes plausible, asthma needs review, metformin dose conflicting.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 690" width="1200" height="690" role="img" aria-label="An AI scribe note with matches highlighted against the consultation, and a findings list grading each: dysuria verified, MI verified, Type 2 diabetes plausible, asthma needs review, metformin dose conflicting.">
   <style>
     text { font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
     .mono { font-family: "DejaVu Sans Mono", Menlo, Consolas, monospace; font-size: 18px; fill: #0f172a; }
@@ -10,58 +10,70 @@
     .why  { font-size: 15px; fill: #64748b; }
   </style>
 
-  <rect x="0" y="0" width="1200" height="560" fill="#f8fafc"/>
+  <rect x="0" y="0" width="1200" height="690" fill="#f8fafc"/>
 
   <!-- ============ TOP LEFT: consultation ============ -->
-  <rect x="30" y="30" width="560" height="244" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="30" y="30" width="560" height="320" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
   <text x="54" y="64" class="lbl">CONSULTATION (SOURCE)</text>
-  <text x="54" y="104" class="say"><tspan class="spk">Dr:&#160;&#160;</tspan>Any past history?</text>
-  <text x="54" y="132" class="say"><tspan class="spk">Pt:&#160;&#160;</tspan>I had a <tspan fill="#16a34a" font-weight="600">heart attack</tspan> last year,</text>
-  <text x="90" y="160" class="say">and I've got <tspan fill="#d97706" font-weight="600">diabetes</tspan>.</text>
-  <text x="54" y="208" class="say"><tspan class="spk">Dr:&#160;&#160;</tspan>And current medications?</text>
-  <text x="54" y="236" class="say"><tspan class="spk">Pt:&#160;&#160;</tspan>Just <tspan fill="#dc2626" font-weight="600">Diabex 500 mg</tspan>,</text>
-  <text x="90" y="264" class="say">twice a day.</text>
+  <text x="54" y="104" class="say"><tspan class="spk">Dr:&#160;&#160;</tspan>What brings you here today?</text>
+  <text x="54" y="132" class="say"><tspan class="spk">Pt:&#160;&#160;</tspan>I've got <tspan fill="#16a34a" font-weight="600">pain when passing urine</tspan>.</text>
+  <text x="54" y="180" class="say"><tspan class="spk">Dr:&#160;&#160;</tspan>Any past history?</text>
+  <text x="54" y="208" class="say"><tspan class="spk">Pt:&#160;&#160;</tspan>I had a <tspan fill="#16a34a" font-weight="600">heart attack</tspan> last year,</text>
+  <text x="90" y="236" class="say">and I've got <tspan fill="#d97706" font-weight="600">diabetes</tspan>.</text>
+  <text x="54" y="284" class="say"><tspan class="spk">Dr:&#160;&#160;</tspan>And current medications?</text>
+  <text x="54" y="312" class="say"><tspan class="spk">Pt:&#160;&#160;</tspan>Just <tspan fill="#dc2626" font-weight="600">Diabex 500 mg</tspan>,</text>
+  <text x="90" y="340" class="say">twice a day.</text>
 
   <!-- ============ TOP RIGHT: AI scribe note ============ -->
-  <rect x="610" y="30" width="560" height="244" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="610" y="30" width="560" height="320" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
   <text x="634" y="64" class="lbl">AI SCRIBE NOTE</text>
 
-  <rect x="694.8" y="132" width="29.6"  height="26" rx="4" fill="#bbf7d0"/>
-  <rect x="738"   y="132" width="170"   height="26" rx="4" fill="#fde68a"/>
-  <rect x="921.6" y="132" width="72.8"  height="26" rx="4" fill="#fecaca"/>
-  <rect x="694.8" y="177" width="170" height="26" rx="4" fill="#fecaca"/>
+  <rect x="675" y="106" width="80" height="26" rx="4" fill="#bbf7d0"/>
+  <text x="634" y="124" class="mono">PC: <tspan id="n_dys">dysuria</tspan>.</text>
 
-  <text x="634" y="150" class="mono">PMHx: MI, Type 2 diabetes, asthma.</text>
-  <text x="634" y="195" class="mono">Meds: Metformin 1g BD.</text>
+  <rect x="694.8" y="182" width="29.6"  height="26" rx="4" fill="#bbf7d0"/>
+  <rect x="738"   y="182" width="170"   height="26" rx="4" fill="#fde68a"/>
+  <rect x="921.6" y="182" width="72.8"  height="26" rx="4" fill="#fecaca"/>
+  <rect x="694.8" y="258" width="170" height="26" rx="4" fill="#fecaca"/>
+
+  <text x="634" y="200" class="mono">PMHx: MI, Type 2 diabetes, asthma.</text>
+  <text x="634" y="276" class="mono">Meds: Metformin 1g BD.</text>
 
   <!-- ============ BOTTOM: findings list ============ -->
-  <rect x="30" y="300" width="1140" height="250" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
-  <text x="54" y="334" class="lbl">FINDINGS</text>
+  <rect x="30" y="376" width="1140" height="302" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="54" y="410" class="lbl">FINDINGS</text>
 
-  <!-- row 1: verified -->
-  <rect x="54" y="352" width="150" height="28" rx="14" fill="#16a34a"/>
-  <text x="129" y="371" class="pill" text-anchor="middle">VERIFIED</text>
-  <text x="230" y="371" class="ent">MI</text>
-  <text x="470" y="371" class="why">matches “heart attack” in the consultation</text>
-  <line x1="54" y1="392" x2="1146" y2="392" stroke="#f1f5f9" stroke-width="1.5"/>
+  <!-- row 1: verified (dysuria) -->
+  <rect x="54" y="428" width="150" height="28" rx="14" fill="#16a34a"/>
+  <text x="129" y="447" class="pill" text-anchor="middle">VERIFIED</text>
+  <text x="230" y="447" class="ent">dysuria</text>
+  <text x="470" y="447" class="why">matches “pain when passing urine” in the consultation</text>
+  <line x1="54" y1="468" x2="1146" y2="468" stroke="#f1f5f9" stroke-width="1.5"/>
 
-  <!-- row 2: plausible -->
-  <rect x="54" y="404" width="150" height="28" rx="14" fill="#d97706"/>
-  <text x="129" y="423" class="pill" text-anchor="middle">PLAUSIBLE</text>
-  <text x="230" y="423" class="ent">Type 2 diabetes</text>
-  <text x="470" y="423" class="why">source only says “diabetes” — LLM adds more detail here</text>
-  <line x1="54" y1="444" x2="1146" y2="444" stroke="#f1f5f9" stroke-width="1.5"/>
+  <!-- row 2: verified (MI) -->
+  <rect x="54" y="480" width="150" height="28" rx="14" fill="#16a34a"/>
+  <text x="129" y="499" class="pill" text-anchor="middle">VERIFIED</text>
+  <text x="230" y="499" class="ent">MI</text>
+  <text x="470" y="499" class="why">matches “heart attack” in the consultation</text>
+  <line x1="54" y1="520" x2="1146" y2="520" stroke="#f1f5f9" stroke-width="1.5"/>
 
-  <!-- row 3: needs review -->
-  <rect x="54" y="456" width="150" height="28" rx="14" fill="#dc2626"/>
-  <text x="129" y="475" class="pill" text-anchor="middle">NEEDS REVIEW</text>
-  <text x="230" y="475" class="ent">asthma</text>
-  <text x="470" y="475" class="why">nothing in the consultation supports it</text>
-  <line x1="54" y1="496" x2="1146" y2="496" stroke="#f1f5f9" stroke-width="1.5"/>
+  <!-- row 3: plausible -->
+  <rect x="54" y="532" width="150" height="28" rx="14" fill="#d97706"/>
+  <text x="129" y="551" class="pill" text-anchor="middle">PLAUSIBLE</text>
+  <text x="230" y="551" class="ent">Type 2 diabetes</text>
+  <text x="470" y="551" class="why">source only says “diabetes” — LLM adds more detail here</text>
+  <line x1="54" y1="572" x2="1146" y2="572" stroke="#f1f5f9" stroke-width="1.5"/>
 
-  <!-- row 4: conflicting -->
-  <rect x="54" y="508" width="150" height="28" rx="14" fill="#dc2626"/>
-  <text x="129" y="527" class="pill" text-anchor="middle">CONFLICTING</text>
-  <text x="230" y="527" class="ent">Metformin</text>
-  <text x="470" y="527" class="why">dose 1 g ≠ 500 mg in the consultation</text>
+  <!-- row 4: needs review -->
+  <rect x="54" y="584" width="150" height="28" rx="14" fill="#dc2626"/>
+  <text x="129" y="603" class="pill" text-anchor="middle">NEEDS REVIEW</text>
+  <text x="230" y="603" class="ent">asthma</text>
+  <text x="470" y="603" class="why">nothing in the consultation supports it</text>
+  <line x1="54" y1="624" x2="1146" y2="624" stroke="#f1f5f9" stroke-width="1.5"/>
+
+  <!-- row 5: conflicting -->
+  <rect x="54" y="636" width="150" height="28" rx="14" fill="#dc2626"/>
+  <text x="129" y="655" class="pill" text-anchor="middle">CONFLICTING</text>
+  <text x="230" y="655" class="ent">Metformin</text>
+  <text x="470" y="655" class="why">dose 1 g ≠ 500 mg in the consultation</text>
 </svg>

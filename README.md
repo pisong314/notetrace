@@ -12,9 +12,10 @@ Not an LLM — NoteTrace doesn't *write* text, it *checks* it, the same way ever
 
 Built by a practising clinician.
 
-**▶ [Try Online Demo](https://provenance-detect-1035234570973.australia-southeast1.run.app/)** — no install needed.
+> [!TIP]
+> **[▶ Try the live demo](https://notetrace.medicologica.com/)** — preloaded with real de-identified consultations (ACI-Bench). No install.
 
-<p align="center"><img src="images/hero.svg" alt="NoteTrace grades each line of an AI scribe note against the consultation — MI verified, Type 2 diabetes plausible, asthma needs review, paracetamol dose conflicting." width="900"></p>
+<p align="center"><img src="images/hero.svg" alt="NoteTrace grades each line of an AI scribe note against the consultation — dysuria and MI verified, Type 2 diabetes plausible, asthma needs review, metformin dose conflicting." width="900"></p>
 
 <p align="center"><em><strong>Fig 1.</strong> Each finding graded against the consultation: verified, plausible, needs review, or conflicting.</em></p>
 
